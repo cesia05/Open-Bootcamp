@@ -1,6 +1,6 @@
 // Ejercicios tema 4
 
-public class Main {
+public class EstructurasDeControl {
 
     public static void main(String[] args) {
         int numero = 22;
