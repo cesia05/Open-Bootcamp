@@ -1,0 +1,85 @@
+// Ejercicios tema 9
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Cliente cliente = new Cliente();
+        cliente.setNombre("Ricardo Juárez");
+        cliente.setEdad(38);
+        cliente.setTelefono("+526894587644");
+        cliente.setCredito(256000);
+
+        Trabajador trabajador = new Trabajador();
+        trabajador.setNombre("Ignacia Lombardo");
+        trabajador.setEdad(29);
+        trabajador.setSalario(42500);
+        trabajador.setTelefono("+524798631528");
+
+        System.out.println("nombre cliente: " + cliente.getNombre());
+        System.out.println("edad cliente: " +cliente.getEdad());
+        System.out.println("teléfono cliente: " +cliente.getTelefono());
+        System.out.println("credito cliente: $" +cliente.getCredito());
+
+        System.out.println("nombre trabajador: " + trabajador.getNombre());
+        System.out.println("edad trabajador: " +trabajador.getEdad());
+        System.out.println("teléfono trabajador: " +trabajador.getTelefono());
+        System.out.println("salario trabajador: $" +trabajador.getSalario());
+
+
+    }
+
+}
+class Persona{
+    public int edad;
+    public String nombre;
+    public String telefono;
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+}
+
+class Cliente extends Persona{
+    public int credito;
+
+    public int getCredito() {
+        return credito;
+    }
+
+    public void setCredito(int credito) {
+        this.credito = credito;
+    }
+}
+
+class Trabajador extends Persona{
+    public int salario;
+
+    public int getSalario() {
+        return salario;
+    }
+
+    public void setSalario(int salario) {
+        this.salario = salario;
+    }
+}
