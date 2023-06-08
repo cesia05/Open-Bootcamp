@@ -1,0 +1,14 @@
+# Ejercicio 6
+
+class Vehiculo():
+    color = "amarillo"
+    ruedas = 4
+    puertas = 5
+
+class Coche(Vehiculo):
+    velocidad = "30 k/h"
+    cilindraje = 4
+
+c = Coche()
+print("La velocidad del coche son: ", c.velocidad)
+print("El cilindraje del coche son: ", c.cilindraje)
