@@ -1,0 +1,8 @@
+# Ejercicio 7
+
+import calculadora
+
+print(calculadora.suma(7, 4))
+print(calculadora.resta(9, 7))
+print(calculadora.multiplicacion(8, 3))
+print(calculadora.division(9, 3))
