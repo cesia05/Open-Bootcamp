@@ -1,14 +1,22 @@
 # Ejercicio 6
 
-class Vehiculo():
-    color = "amarillo"
-    ruedas = 4
-    puertas = 5
+
+class Vehiculo():        
+    def __init__(self, color, ruedas, puertas):
+        self.color = color
+        self.ruedas = ruedas
+        self.puertas = puertas
 
 class Coche(Vehiculo):
-    velocidad = "30 k/h"
-    cilindraje = 4
+    def __init__(self, color, ruedas, puertas, velocidad, cilindraje):
+        super().__init__(color, ruedas, puertas)
+        self.velocidad = velocidad
+        self.cilindraje = cilindraje
 
-c = Coche()
-print("La velocidad del coche son: ", c.velocidad)
-print("El cilindraje del coche son: ", c.cilindraje)
+coche = Coche("azul", 4, 5, 150, 8)
+
+print("Color: ", coche.color)
+print("Ruedas: ", coche.ruedas)
+print("Puertas: ", coche.puertas)
+print("Velocidad", coche.velocidad)
+print("Cilindraje: ", coche.cilindraje)
