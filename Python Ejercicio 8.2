@@ -1,0 +1,19 @@
+#Ejercicio 8.2
+
+from pickle import *
+
+class Vehiculo():
+    def __init__(self, puertas, color, llantas ):
+        self.puertas = puertas
+        self.color = color
+        self.llantas = llantas
+
+tsubaru = Vehiculo(5, "morado", 4)
+
+f = open('tsubaru', 'w+b')
+dump(tsubaru, f)
+
+f.seek(0)
+new_tsubaru = load(f)
+
+f.close()
