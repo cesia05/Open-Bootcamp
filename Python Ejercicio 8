@@ -1,0 +1,9 @@
+# Ejercicio 8
+
+#f = open('ejercicio.txt', 'w')
+#f.write('Archivo creado\n')
+#f.close()
+
+f= open('ejercicio.txt', 'a')
+f.write('Linea añadida')
+f.close()
