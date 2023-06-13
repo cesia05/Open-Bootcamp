@@ -1,0 +1,7 @@
+# Ejercicio 9
+
+items = input("Introduce países separados por comas:\n")
+
+countries = [country for country in items.split(",")]
+
+print(", ".join(sorted(list(set(countries)))))
