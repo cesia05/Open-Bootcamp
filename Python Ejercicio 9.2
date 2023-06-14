@@ -1,0 +1,12 @@
+# Ejercicio 9.2
+
+from functools import reduce
+
+numeros = list(range(30))
+def suma_impar(numeros):
+    result = list(filter((lambda x: x % 2), numeros))
+    print(result)
+    result = reduce((lambda a, b: a + b), result)
+    print(result)
+
+suma_impar(numeros)
